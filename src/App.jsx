@@ -15,7 +15,9 @@ function App() {
         <Sidebar />
         <div className="flex-1 p-4">
           <Routes>
+            <Route path="/" element={<UsersManagementPage />} />
             <Route path="/users" element={<UsersManagementPage />} />
+
             <Route path="/analytics" element={<AnalyticsSection />} />
             <Route path="/payments" element={<PaymentSection />} />
             <Route path="/applications" element={<Application />} />
