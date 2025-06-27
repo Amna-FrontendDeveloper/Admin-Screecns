@@ -1,12 +1,21 @@
-import React from 'react'
-import UsersManagementPage from './Pages/UsersManagementPage'
+import React from "react";
 
-const App = () => {
+import UsersManagementPage from './Pages/UsersManagementPage'
+import AnalyticsSection from "./Pages/AnalyticsSection";
+
+import PaymentSection from './Pages/PaymentSection'
+import Application from "./Pages/Application";
+
+function App() {
   return (
-    <>
-<UsersManagementPage/>
-    </>
-  )
+    <div className="">
+     {/* <AnalyticsSection /> */}
+    {/* <PaymentSection/> */}
+     {/* <UsersManagementPage/> */}
+     {/* <Application/> */}
+
+    </div>
+  );
 }
 
-export default App
+export default App; // 👈 This is required!

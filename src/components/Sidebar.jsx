@@ -27,11 +27,10 @@ const Sidebar = () => {
   return (
   <>
  
-    <aside className={`bg-white h-screen border-r border-zinc-300 p-4 flex flex-col ${isCollapsed ? "w-35" : "w-64"} transition-all duration-300`}>
+    <aside className={`bg-gray-100 h-screen border-r border-zinc-300 p-4 flex flex-col ${isCollapsed ? "w-35" : "w-50"} transition-all duration-300`}>
     
-      {/* Logo */}
-
-     {/* Logo */}
+     
+ {/* Logo */}
      <div className="mb-10 flex justify-center relative">
   <img src={logo} alt="Logo" className={`transition-all ${isCollapsed ? "w-15" : "w-24"}`} />
 
