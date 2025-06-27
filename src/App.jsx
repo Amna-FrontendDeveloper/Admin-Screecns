@@ -1,21 +1,30 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import UsersManagementPage from './Pages/UsersManagementPage'
+import Sidebar from "./components/Sidebar";
+import UsersManagementPage from './Pages/UsersManagementPage';
 import AnalyticsSection from "./Pages/AnalyticsSection";
-
-import PaymentSection from './Pages/PaymentSection'
+import PaymentSection from './Pages/PaymentSection';
 import Application from "./Pages/Application";
+import ReviewModeration from "./Pages/ReviewModeration";
 
 function App() {
   return (
-    <div className="">
-     {/* <AnalyticsSection /> */}
-    {/* <PaymentSection/> */}
-     {/* <UsersManagementPage/> */}
-     {/* <Application/> */}
-
-    </div>
+    <Router>
+      <div className="flex">
+        <Sidebar />
+        <div className="flex-1 p-4">
+          <Routes>
+            <Route path="/users" element={<UsersManagementPage />} />
+            <Route path="/analytics" element={<AnalyticsSection />} />
+            <Route path="/payments" element={<PaymentSection />} />
+            <Route path="/applications" element={<Application />} />
+            <Route path="/reviews" element={<ReviewModeration />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
-export default App; // 👈 This is required!
+export default App;

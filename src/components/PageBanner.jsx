@@ -5,10 +5,10 @@ import defaultBg from "../assets/BackgroundBanner.png"; // shared default image
 const PageBanner = ({ title, subtitle, background = defaultBg }) => {
   return (
     <div
-      className="bg-cover bg-center rounded-lg mx-8 mt-6 relative"
+      className="bg-cover bg-center rounded-lg mx-4 mt-6 relative"
       style={{
         backgroundImage: `url(${background})`,
-        minHeight: "220px",
+        minHeight: "200px",
       }}
     >
       <div className="bg-opacity-40 absolute inset-0 rounded-lg"></div>

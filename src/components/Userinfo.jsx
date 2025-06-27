@@ -1,8 +1,7 @@
 import React from "react";
 import DataTable from "./DataTable";
-import users from "../data/usersData";
 
-const columns = [
+const columns = () => [
   {
     key: "name",
     header: "User",
@@ -55,15 +54,14 @@ const columns = [
   },
 ];
 
-const Userinfo = () => {
+const Userinfo = ({ users, onEdit, onDelete }) => {
   return (
-    <div className="p-4">
-     
+    <div className="p-2">
       <DataTable
         data={users}
-        columns={columns}
-        onEdit={(user) => console.log("Edit user", user)}
-        onDelete={(id) => console.log("Delete user", id)}
+        columns={columns(onEdit, onDelete)}
+        onEdit={onEdit}
+        onDelete={onDelete}
       />
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react'
 import DisputesList from '../components/DisputesList'
 import disputesData from '../data/mockDisputes.json';
-import Sidebar from '../components/Sidebar';
+
 import Header from '../components/Header';
 import Background from '../assets/BackgroundBanner.png'
 
@@ -13,7 +13,7 @@ const PaymentSection = () => {
   
 
    <div className="flex h-screen">
-      <Sidebar />
+     
       <div className="flex flex-col flex-1">
         <Header />
         <div className=" bg-cover bg-center rounded-lg mx-8 mt-6 relative"

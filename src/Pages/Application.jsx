@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React, {  } from "react";
 import Header from "../components/Header";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 import ApplicationsList from "../components/ApplicationsList";
 import PageBanner from "../components/PageBanner";
 
 // Icons
-import Dashboard from "../assets/dashboard.png";
-import star from "../assets/star.png";
-import usersIcon from "../assets/users.png";
-import money from "../assets/tdesign_money.png";
+// import Dashboard from "../assets/dashboard.png";
+// import star from "../assets/star.png";
+// import usersIcon from "../assets/users.png";
+// import money from "../assets/tdesign_money.png";
 
 const Application = () => {
-  const [activeTab, setActiveTab] = useState("applications");
+  // const [activeTab, setActiveTab] = useState("applications");
 
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <Sidebar
+      {/* <Sidebar
         activeTab={activeTab}
         onTabChange={setActiveTab}
         showSubmenu={false}
@@ -26,7 +26,7 @@ const Application = () => {
           { id: "reviews", label: "Review Moderation", icon: star },
           { id: "payments", label: "Payment Disputes", icon: money },
         ]}
-      />
+      /> */}
 
       {/* Main content area */}
       <div className="flex flex-col flex-1">
